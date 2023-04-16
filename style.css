@@ -1,0 +1,51 @@
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(41, 41, 41, 1);
+    font-family: "sohne",
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    line-height: 60px;
+    letter-spacing: -0.016em;
+    display: block;
+}
+h2 {
+    line-height: 28px;
+    font-size: 22px;
+    box-sizing: inherit;
+    color: rgba(117, 117, 117, 1);
+    font-weight: 400;
+    font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+mark{
+    background-color: rgb(232, 243, 232);
+    cursor: pointer;
+}
+.pTitle{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(41, 41, 41, 1);
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+caption{
+    font-weight: bold;
+    margin: 10px;
+}
+colgroup{
+    background-color: aqua;
+}
+tr {
+    font-size: 18;
+    font-weight: 600;
+}
+td{
+    direction: ltr;
+    padding: 10px;
+}
+thead{
+    color: red;
+}
