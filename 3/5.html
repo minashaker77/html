@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Image Map</title>
+    </head>
+    <body>
+        <img src="1.jpeg" width="500px" usemap="#workplace" />
+        <map name="workplace">
+            <!-- alt is description for specific area and seo -->
+            <area shape="rect" coords="34,44,270,350" href="https://google.com" alt="google"/>
+            <area shape="rect" coords="290,172,333,250" href="https://bing.com" alt="bing"/>
+        <br />
+        <br />
+        </map>
+        <a href="https://digikala.com">
+            <img src="2.png" width="400px" alt="digikala site" />
+        </a>
+        <picture>
+            <!-- Responsive -->
+            <!-- Media Query -->
+            <source srcset="1.jpeg" media="(min-width:650px)"/>
+            <br />
+            <img src="2.png" width="700px"/>
+        </picture>
+    </body>
+</html>
