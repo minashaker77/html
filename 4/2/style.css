@@ -1,0 +1,46 @@
+h1{
+    color: red;
+}
+h2{
+    color: green;
+}
+body{
+    color: blue;
+    background-color: rgba(250, 235, 215, 0.714);
+
+}
+h3{
+    color: navy;
+}
+/* p{
+    color: blue;
+} */
+body > div > h3 {
+    color: orange;
+}
+body div h3{
+    color: orange;
+}
+div h3 {
+    color: orange;
+}
+.details{
+    font-size: 10px;
+    color: red;
+}
+.details-second{
+    font-size: 20px;
+}
+#name{
+    color: brown;
+}
+/* email is uniqe id */
+#email{
+    color: green;
+}
+/* ul li {
+    color: blueviolet;
+} */
+/* #list li{
+    color: gold;
+} */
