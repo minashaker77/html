@@ -1,0 +1,33 @@
+.card{
+    background-color: #e5e5e5;
+    /* border: 2px dotted rgba(9, 9, 9, 0.979); */
+    border-width: 4px;
+    border-style: dotted;
+    border-color: black;
+    border-left:4px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+.card h2{
+    font-size: 19px;
+
+}
+.card p{
+    font-size: 12px;
+
+}
+.card.card-green{
+    background-color: rgb(111, 205, 111);
+    border-radius: 8px;
+    border-color: rgb(52, 139, 26);
+}
+.underline {
+    border-bottom: 3px solid #331fe4;
+}
+
+.circle {
+    border: 2px solid #000;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
