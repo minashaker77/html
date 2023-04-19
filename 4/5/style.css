@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'webfont';
+    src: url(./webfont.woff) format('woff');
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0px;
+}
+
+.heading1{
+    color: red;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading2 {
+    color: purple;
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 100;
+}
+/* font from my system */
+.headin3{
+    font-family: 'French Script MT Regular' ,Agency FB ;
+    font-size: 40px;
+}
+.headingExternalFont {
+    font-family: 'Rubik Pixels', cursive;
+}
+.headingWebFont {
+    font-family: 'webfont';
+    font-size: 30px;
+}
+
+.headingSystem{
+    font-family: 'Tempus Sans ITC Regular', Viner Hand ITC Regular ;
+    font-size: 40px;
+}
+.headingSystemNotFound {
+    font-family: 'French Script MgT Regular' ,Agency FB ;
+    font-size: 40px;
+}
