@@ -1,0 +1,17 @@
+body{
+    font-size: 16px;
+}
+/* em yani age 1 bashe mishe 16px
+age 1.5 bashe 1.5 ro dar 16px zarb mikone */
+/* rem yani nesbat be khode element */
+h1{
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+h2{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+.typo {
+    font-size: 30px;
+}
