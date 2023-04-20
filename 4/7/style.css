@@ -1,0 +1,41 @@
+a {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+a:hover {
+    color: green;
+    background-color: yellow;
+}
+a:active {
+    color: pink;
+    background-color: black;
+}
+a:visited {
+    color: pink;
+}
+ul {
+    padding: 10px;
+    margin: 20px;
+}
+ul li{
+    padding: 5px 0px;
+    list-style-type:  disclosure-closed;
+}
+ul li a{
+    padding: 0px;
+    margin: 0px;
+}
+table{
+    border-collapse: collapse;
+    font-size: 30px;
+}
+table thead{
+    background-color: rgb(159, 108, 206);
+}
+table td{
+    border: 1px solid gray;
+    padding: 0 10px;
+}
