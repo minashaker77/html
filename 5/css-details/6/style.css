@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 400px);
+    background-color: green;
+    padding: 10px;
+}
+.box2 {
+    /* beyne ina ha kudum bozorgtar bud */
+    width: max(30% , 200px);
+    height: 100px;
+    background-color: purple;
+    padding: 10px;
+}
+.box3 {
+    /* beyne ina har kudum kuchiktar bud */
+    width: min(10% - 100px);
+    height: 100px;
+    background-color: green;
+    padding: 10px;
+}
+/* CSS Attribute Selector */
+a{
+    color: red;
+}
+a[target="_blank"]{
+    color: green;
+}
+/* ~= yani agar gazar tuye title bud */
+a[title~="gazar"]{
+    color: rgb(94, 65, 241);
+}
