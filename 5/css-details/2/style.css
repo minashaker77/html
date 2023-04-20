@@ -1,0 +1,21 @@
+/* default: descendent selector */
+div p{
+    background-color: gray;
+}
+/* child selector */
+div > p {
+    background-color: red;
+}
+
+/* general sibling selector */
+p ~ ul {
+    background-color: orchid;
+}
+
+/* + yani hamsayegi p ro avaz kon v range sabz bede :
+ sibling selector */
+p + ul {
+    background-color: rgb(102, 225, 102);
+}
+
+/* . * ~ > : are combinators */
