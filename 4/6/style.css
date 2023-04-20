@@ -1,0 +1,39 @@
+* , body{
+    font-family: 'webfont';
+    font-weight: 500;
+}
+
+h1{
+    color: blue;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+h2{
+    text-transform: lowercase;
+    border-bottom: 2px solid green;
+    text-shadow: -4px 3px #3d8eeb;
+    /* baraye text shadow avali up/down dovomi right/left */
+}
+h3{
+    text-align: right;
+}
+.rtl{
+    direction: rtl;
+}
+.special_h2{
+    letter-spacing: 10px;
+    line-height: 20px;
+}
+p.different{
+    line-height: 40px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    text-indent: 50px;
+}
+p.whitespace{
+    white-space: nowrap;
+}
