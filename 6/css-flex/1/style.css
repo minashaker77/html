@@ -1,0 +1,46 @@
+body{
+    color: #131419;
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    color: #131419;
+    text-decoration: none;
+}
+a:hover{
+    color: #008c8e;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0px 24px;
+}
+
+.logo img{
+    width: 100%;
+    padding-right: 10px;
+}
+.navbar-first-half{
+    display: flex;
+}
+.menus{
+    display: flex;
+    align-items: center;
+}
+.menus ul {
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+}
+
+.menus ul li a{
+    font-size: 16px;
+    padding: 0px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -.025em;
+    font-weight: 500;
+}
