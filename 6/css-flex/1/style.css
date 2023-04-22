@@ -5,6 +5,7 @@ body{
 }
 *{
     letter-spacing: -.025em;
+    box-sizing: border-box;
 }
 
 a{
@@ -127,18 +128,25 @@ a.link-primary:hover svg {
     color: #131419;
 }
 .banner-menu .banner-menus-scroll {
-    overflow-x: scroll;
     width: 100%;
+    display: flex;
+    
 }
 
 .banner-menu ul{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
 }
 .banner-menu ul li {
     list-style: none;
     display: flex;
     height: 140px;
+    flex-grow: 1;
+    min-width:150px ;
+    /* flex-shrink: 1;
+    flex-basis: 40%; */
     
 }
 
@@ -147,21 +155,71 @@ a.link-primary:hover svg {
     color: #5a5a5e;
     flex-direction: column;
     align-items: center;
-    width: 140px;
+    width: 100%;
     justify-content: center;
     border: 1px solid rgb(225, 225, 225);
     transition: background-color .3s ease;
 }
+
+.banner-menu ul li a.link-image img{
+    padding: 10px;
+    width:50px;
+}
+
 .banner-menu ul li a.link-image span{
     text-align: center;
 }
 .banner-menu ul li a.link-image:hover{
+    color: #131419;
     background-color: #f3f3f3;
 }
-@media screen and (min-width:600px) {
+/* @media screen and (min-width:600px) {
     .banner-menu ul{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
     }
+} */
+
+
+.banner-two-columns{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.banner-two-columns .banner-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 300px;
+    text-align: center;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+.banner-two-columns .banner-text img{
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.banner-two-columns .banner-text p{
+    font-size: 26px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: #131419;
+}
+
+.banner-two-columns .banner-text .banner-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
 }
