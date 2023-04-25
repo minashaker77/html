@@ -77,10 +77,8 @@ a.link-primary:hover svg {
 }
 
 .menus ul li a{
-    font-size: 16px;
     padding: 0px 10px;
     font-size: 16px;
-    line-height: 1.5;
     font-weight: 500;
 }
 .banner-row{
@@ -168,7 +166,7 @@ a.link-primary:hover svg {
 
 .banner-menu ul li a.link-image img{
     padding: 10px;
-    width:50px;
+    width:60px;
 }
 
 .banner-menu ul li a.link-image span{
@@ -223,4 +221,83 @@ a.link-primary:hover svg {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-text{
+    margin-left:10px ;
+}
+
+.dropdown a.dropdown-button{
+    height: 32px;
+    border: 2px solid #f3f3f3;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color .3s ease;
+    
+}
+.dropdown a.dropdown-button:hover{
+    background-color: #f3f3f3;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 600px;
+    max-width: calc(100vw - 50px);
+    top: 30px;
+    right: 0px;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.dropdown-list p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.dropdown:hover .dropdown-list{
+    display: inline-block;
+}
+
+.dropdown .dropdown-menus {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown .dropdown-menus li{
+    flex-grow: 1;
+}
+
+.dropdown .dropdown-menus li a{
+    display: flex;
+    flex-direction: column;
+    padding:12px;
+    border: 2px solid #f3f3f3;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+.dropdown .dropdown-menus li a:hover{
+    background-color: #f3f3f3;
+    color: #131419;
+}
+
+.dropdown .dropdown-menus li a img{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .dropdown .dropdown-text {
+        display: none;
+    }
 }
