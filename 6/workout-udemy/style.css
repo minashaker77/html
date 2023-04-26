@@ -1,21 +1,24 @@
+html {
+    overflow-x: hidden;
+    
+}
 body{
-    min-width: 60px;
+    min-width: 40rem;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: udemy sans,
-    sf pro text,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,segoe ui,
-    Helvetica,Arial,
-    apple color emoji,
-    segoe ui emoji,segoe ui symbol;
     font-weight: 400;
     line-height: 1.4;
     font-size: 16px;
     color: #1c1d1f;
     margin: 0;
+    font-family: udemy sans,sf pro text,
+    -apple-system,BlinkMacSystemFont,
+    Roboto,segoe ui,Helvetica,
+    Arial,sans-serif,
+    apple color emoji,
+    segoe ui emoji,
+    segoe ui symbol;
 }
 
 button{
@@ -39,10 +42,10 @@ button:hover{
 a {
     text-decoration: none;
 }
+
 a:hover{
     color: #5624d0;
 }
-
 
 
 .navbar{
@@ -231,8 +234,183 @@ a:hover{
     white-space: nowrap;
 }
 
+.billboard img{
+    width: 100vw;
+    min-width: 37.5;
+    max-width: 100%;
+    vertical-align: middle;
+    height:auto;
+    object-fit: contain;
+    object-position: initial;
+}
+
+.billboard-banner {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    height: auto;
+    padding: 26px;
+    width: 340px;
+    left: 50px;
+    top:95px;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.billboard2{
+    display: none;
+}
+
+.billboard-banner h1{
+
+    font-size: 32px;
+    min-width: initial;
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.5;
+    font-family: SuisseWorks,Georgia,Times,'Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+.billboard-banner p{
+    max-width: 800px;
+    white-space: normal;
+    overflow: hidden;
+    text-shadow: ellipsis;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: udemy sans,sf pro text,
+    -apple-system,BlinkMacSystemFont,
+    Roboto,segoe ui,
+    Helvetica,Arial,
+    sans-serif,apple color emoji,
+    segoe ui emoji,segoe ui symbol;
+}
+
+.billboard-banner .billboard-searchbox input{
+    margin-top: 40px;
+    border: 1px solid #1c1d1f;
+    display: flex;
+    color: #6a6f73;
+    position: relative;
+    cursor: text;
+    align-items: center;
+    justify-content: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    background-image: none;
+    outline: none;
+    width: 100%;
+    line-height: 1px;
+    background-color: transparent;
+    min-width: auto;
+    padding: 5px;
+    height: 48px;
+}
+
+.cantainer{
+    width: 100%;
+    max-width: 134px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.container .tab-title , .tab-slider{
+    margin: 20px 30px;
+}
+.container .tab-title h2{
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.35;
+    letter-spacing: 0.2px;
+}
+
+.container .tab-title p{
+    display: block;
+    margin: 16px 0 0;
+    max-width: 100%;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.tab-slider{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    overflow-x: hidden;
+}
+
+.tab-slider .index .tab-button{
+    display: block;
+    min-width: 10px;
+    scroll-snap-align: start;
+}
+
+
+.tab-slider .tab-button button{
+    background: 0 0;
+    padding: 8px 4px;
+    outline-offset: -4px!important;
+    position: relative;
+    width: 100%;
+    height: 48px;
+    min-width: auto;
+    border: none;
+    display: inline-flex;
+    vertical-align: bottom;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.tab-slider .tab-button button span{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 980px) {
+    .container .tab-title h2{
+        max-width: 100%;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: 0.5;
+    }
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .teach-dropdown{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
+    .navbar{
+        align-items: center;
+        min-width: calc(100vw - 0px);
+        width: calc(100vw - 0px);
+        display: flex;
+        background: #fff;
+        height: 70px;
+        padding: 0 24px;
+        position: relative;
+        z-index: 1010;
+        box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    
+    }
     .search-box {
         display: none;
     }
@@ -284,9 +462,46 @@ a:hover{
 
 }
 
-@media screen and (max-width: 920px) {
-    .teach-dropdown{
+
+@media screen and (min-width: 700px) {
+    .billboard-banner .billboard-searchbox input{
         display: none;
     }
 }
+@media screen and (max-width: 700px) {
+    .billboard-banner{
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0px 0px rgba(0,0,0,.00), 0 0px 0px rgba(0,0,0,.00);
+        position: relative;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .billboard img{
+        display: none;
+    }
+    .billboard2{
+        display: block;
+    }
+    .billboard2 img{
+        width: 100%;
+        max-width: 100%;
+        min-width: 10px;
+        object-fit: cover;
+        height: auto;
+        object-position: center;
+        vertical-align: middle;
+        overflow: clip;
+    }
+}
 
+@media screen and (min-width: 970px) {
+    .billboard-banner{
+        width: 500px;
+        left: 48px;
+        top: 100px;
+    }
+}
