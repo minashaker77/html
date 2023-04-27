@@ -321,7 +321,7 @@ a:hover{
     padding-left: 24px;
 }
 
-.container .tab-title , .tab-slider{
+.container .tab-title , .tab-slider , .headshot-banner{
     margin: 20px 30px;
 }
 .container .tab-title h2{
@@ -376,6 +376,53 @@ a:hover{
     line-height: 1.2;
     letter-spacing: 0.2px;
     font-size: 16px;
+}
+
+.headshot-banner{
+    border: 1px solid #d1d7dc;
+    padding: 32px;
+}
+
+.headshot-banner .slider-title h2{
+    margin-bottom: 8px;
+    max-width: calc(100vw - 50px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    font-size: 26px;
+}
+
+.headshot-banner .slider-title p{
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.headshot-banner .slider-title a{
+    margin: 20px 0;
+    color: #1c1d1f;
+    border: 1px solid #1c1d1f;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    min-width: 80px;
+    padding: 0 12px;
+    justify-content: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+.headshot-banner .slider-title a:hover{
+    background-color: rgba(0,0,0,.04);
+}
+
+.headshot-banner .slider-title a span{
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    font-size: 14px;
 }
 
 @media screen and (min-width: 980px) {
