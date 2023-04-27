@@ -425,6 +425,68 @@ a:hover{
     font-size: 14px;
 }
 
+.headshot-banner .courses-slider{
+    position: relative;
+    display: grid;
+    visibility: visible;
+    cursor: auto;
+    overflow: hidden;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    grid-auto-columns: calc((100% - (3 - 1) * 1.6rem)/3);
+}
+
+.headshot-banner .courses-slider .courses-slider-item{
+    flex-direction: column;
+    cursor: pointer;
+    max-width: 375px;
+    min-width: 170px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.headshot-banner .courses-slider .courses-slider-item .image-wrapper{
+    padding-bottom: 56.25%;
+    width: 100%;
+    background-color: #1c1d1f;
+    border: 1px solid #d1d7dc;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    visibility: visible;
+}
+
+.headshot-banner .courses-slider .courses-slider-item img{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: 0.5 linear 100ms;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transition-property: opacity;
+    
+}
+
+.headshot-banner .courses-slider .courses-slider-item h3 a{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    color: #1c1d1f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.headshot-banner .price{
+    display: inline;
+}
+
 @media screen and (min-width: 980px) {
     .container .tab-title h2{
         max-width: 100%;
