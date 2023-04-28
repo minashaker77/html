@@ -1,0 +1,19 @@
+/* button */
+
+.btn {
+    background-color: inherit;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.btn.btn-icon{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    max-width: 200px;
+    align-items: center;
+    justify-items: center;
+}
+.btn.btn-icon svg{
+    width: 20px;
+    height: 20px;
+} 
