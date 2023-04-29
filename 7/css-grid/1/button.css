@@ -17,3 +17,12 @@
     width: 20px;
     height: 20px;
 } 
+.btn.btn-primary{
+    background-color: var(--primary);
+    width: 100%;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.btn.btn-primary:hover{
+    box-shadow: var(--box-shadow-primary);
+}

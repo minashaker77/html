@@ -3,7 +3,7 @@ body{
     background: white;
     font-weight: 400;
     line-height: 1.75;
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--black);
 }
 html {
     font-size: 100%;
@@ -36,5 +36,5 @@ h5 {font-size: 1.125rem;}
 
 small, .text_small {font-size: 0.889rem;}
 a{
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--black);
 }
