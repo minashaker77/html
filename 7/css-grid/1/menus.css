@@ -1,0 +1,20 @@
+.menus{
+    width: 100%;
+}
+.menus ul.menu-list{
+    width: 100%;
+    display: grid;
+    padding: 16px;
+    grid-template-columns: repeat(auto-fit , minmax(50px , 1fr));
+}
+.menus ul.menu-list li{
+    text-align: center;
+}
+.menus ul.menu-list li a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.menus ul.menu-list li a:hover{
+    /* background-color: red; */
+    background: linear-gradient(transparent 60%, #FD9A84 60%);
+}
