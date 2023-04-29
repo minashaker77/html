@@ -35,3 +35,6 @@ h4 {font-size: 1.266rem;}
 h5 {font-size: 1.125rem;}
 
 small, .text_small {font-size: 0.889rem;}
+a{
+    color: rgba(0, 0, 0, 0.87);
+}
