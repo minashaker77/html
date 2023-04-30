@@ -1,35 +1,35 @@
 @import '../sass-utils/variables';
-
-.btn{
-    border: 1px solid $gray100;
-    border-radius: 4px;
-    padding: 4px 12px;
+@import '../sass-utils/mixins';
+.btn {
+    @include box-primary;
     cursor: pointer;
-    height: 40px;
-
-
-    &--outline{
-        background-color: $white;
-    }
-    &--texticon{
-        display: grid;
-        grid-template-columns: 20px 1fr;
-        align-items: center;
-        gap: 8px;
-    }
-
-    &--noborder{
-        border: none;
-    }
-
-    &--icon{
-        img{
-            width: 25px;
-        }
-    }
-
-    &:hover{
+    &:hover {
         background-color: $gray100;
         color: $white;
+    }
+    
+    &--outline {
+        background-color: $white;
+    }
+    &--texticon {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 8px;
+        align-items: center;
+    }
+    &--icon {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 8px;
+        align-items: center;
+        img  {
+            width: 25px;
+        }
+        &:hover {
+            background-color: $white;
+        }
+    }
+    &--noborder {
+        border: none;
     }
 }

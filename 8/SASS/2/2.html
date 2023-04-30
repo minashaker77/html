@@ -6,7 +6,7 @@
         <title>Miro Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         <div class="app auth">
@@ -14,7 +14,6 @@
             <!--BEM-->
             <div class="auth__socials">
                 <div>
-                    
                     <button class="btn btn--outline btn--texticon">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.24182 6.67897C1.98432 5.13169 3.03341 3.82393 4.35554 2.73652C6.14713 1.2563 8.20219 0.365299 10.5063 0.0922493C13.2129 -0.228704 15.7566 0.283863 18.1086 1.69222C18.693 2.04192 19.2391 2.43952 19.7613 2.87065C19.8906 2.97604 19.8763 3.03831 19.7661 3.1437C18.6978 4.20715 17.6296 5.27061 16.5709 6.34365C16.4464 6.4682 16.3793 6.45862 16.2452 6.35802C13.141 3.96764 8.61416 4.61433 6.30042 7.77596C5.89324 8.33164 5.56271 8.93043 5.33277 9.58192C5.31361 9.6394 5.27529 9.6921 5.24655 9.74958C4.62859 9.28013 4.00585 8.81067 3.39269 8.33643C2.67413 7.78554 1.95558 7.23465 1.24182 6.67897Z" fill="#E94335"></path>
@@ -33,6 +32,25 @@
                         <img src="https://static-website.miro.com/static/images/signup/v2/office-365.svg?version=1.1036.0" alt="Sign in with Office 365">
                     </button>
                 </div>
+            </div>
+            <div class="auth__form">
+                <span> or use your email to sign in: </span>
+                <form class="form">
+                    <div class="input__group">
+                        <label for="email"> Work Email </label>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="signup__input-icon" preserveAspectRatio="none" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6ZM18.4142 6H5.5858L12 11.2115L18.4142 6ZM4 7.28848V18H20V7.28844L12.6306 13.2761C12.2632 13.5746 11.7368 13.5746 11.3694 13.2761L4 7.28848Z" fill="#9391A6"></path>
+                        </svg>
+                        <input id="email" type="email" />
+                    </div>
+                    <div class="input__group">
+                        <label for="password"> Password </label>
+                        <input id="password" type="password" />
+                    </div>
+                    <div class="input__group">
+                        <button type="submit" class="btn btn--primary">Sign in</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
