@@ -1,4 +1,43 @@
 @import '../sass-utils/mixins';
+@keyframes labelAnimated{
+    // from{
+    //     top: 12px;
+    //     left: 48px;
+    // }
+    // to{
+    //     top: -12px;
+    //     left: 8px;
+    // }
+
+
+    // ***aval bere bala bad chap****//
+    0%{
+        top: 12px;
+        left: 48px;
+        color: red;
+    }
+    50%{
+        top: -12px;
+        left: 48px;
+        color: blue;
+    }
+    100%{
+        top: -12px;
+        left: 8px;
+        color: green;
+    }
+
+
+    // 0%{
+    //     top: 12px;
+    //     left: 48px;
+    // }
+    // 100%{
+    //     top: -12px;
+    //     left: 8px;
+    // }
+}
+
 
 .form {
     width: 100%;
@@ -11,17 +50,30 @@
         label {
             position: absolute;
             @include small;
+            top: 12px;
+            left: 48px;
+            transition: all 0.4s ease-in-out;
         }
         svg {
             position: absolute;
             top: 12px;
             left: 12px;
         }
-        input { 
+        input {
             @include box-primary;
             @include heading5;
             width: 100%;
             padding-left: 40px;
+        }
+        &:focus-within{
+            label{
+                animation-name: labelAnimated;
+                animation-duration: 0.4s;
+                top: -12px;
+                left: 8px;
+                background-color: $white;
+                padding: 0 7px;
+            }
         }
     }
 }
